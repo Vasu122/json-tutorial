@@ -1,0 +1,28 @@
+<html>
+<head>
+
+</head>
+<body>
+<script type="text/javascript">
+  var data={
+      boysName:'vasudev',
+      boyAge:4.5,
+      girlsName:'laddo',
+      girlsAge:2.3,
+      colors:['red','green','yellow','blue'],
+      records:[
+        {name:'rabindra',city:'delhi'},
+        {name:'harmeek',city:'Saket delhi'},
+        {name:'reena',city:'pitampura delhi'},
+      ]
+  };
+
+document.write(JSON.stringify(data));
+console.log(JSON.stringify(data));
+function sendJsonData(){
+  window.location='index.html?x=' +JSON.stringify(data);
+}
+</script>
+<button onclick="sendJsonData()">send json data</button>
+</body>
+</html>

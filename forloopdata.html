@@ -1,0 +1,31 @@
+<html>
+<head>
+
+</head>
+<body>
+<script type="text/javascript">
+  var data={
+      colors:['red','green','yellow','blue'],
+      records:[
+        {name:'rabindra',city:'delhi'},
+        {name:'harmeek',city:'Saket delhi'},
+        {name:'reena',city:'pitampura delhi'},
+      ]
+  };
+  /**** first method ***/
+  for(key in data.colors){
+    document.write(data.colors[key] +'<br>');
+  }
+  /**** second method ***/
+  for(i=0; i<data.colors.length; i++){
+    document.write(data.colors[i] +'<br>');
+  }
+  /********** records data fetch object***/
+  for( key in data.records){
+    for( inner_key in data.records[key]){
+      document.write(data.records[key][inner_key] + "<br>");
+    }
+  }
+</script>
+</body>
+</html>

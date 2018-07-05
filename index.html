@@ -1,0 +1,34 @@
+<html>
+<head>
+
+</head>
+<body>
+<script type="text/javascript">
+
+var data={
+  "name":"rabindra",
+  "number":30,
+  "color":['red','green','yellow'],
+  "condition":true,
+  "friends":{
+    "noida":"shivanshu",
+    "delhi":"harmeek",
+    "gurgaon":"vivek",
+    "kanpur":"aishwarya"
+  }
+};
+
+document.write(data.name);
+document.write(data.number);
+data.color.map(function(color1,index){
+  document.write('<br>');
+  document.write(color1);
+});
+data.friends.foreach(function(i,a) {
+  document.write('<br>');
+  document.write(a.noida);
+});
+document.write(data.friends.kanpur);
+</script>
+</body>
+</html>
